@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beceriler</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  .skills-bar {
+    padding: 10px 300px;
+  }
+  
+  .skills-bar .bar {
+    margin: 25px 0;
+  }
+  
+  .skills-bar .bar .info span {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .skills-bar .bar .info {
+    margin-bottom: 8px;
+    color: #f0f0e6;
+  }
+  
+  .skills-bar .bar .progress-line {
+    position: relative;
+    height: 10px;
+    width: 550px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  .bar .progress-line span {
+    position: absolute;
+    background: #25b79f;
+    height: 100%;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  @keyframes animate {
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  .progress-line .html {
+    width: 80%;
+  }
+  .progress-line .css {
+    width: 70%;
+  }
+  .progress-line .bootstrap {
+    width: 50%;
+  }
+  .progress-line .javascript {
+    width: 50%;
+  }
+  .progress-line .c {
+    width: 50%;
+  }
+  
+  .bar .progress-line span::before {
+    content: "";
+    height: 0;
+    right: 0;
+    top: -12px;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-style: #f0f0f0;
+    border-top-color: #f0f0f0;
+  }
+  
+  .bar .progress-line span::after {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: #07374a;
+    font-size: 12px;
+    font-weight: 700;
+    background: #f0f0f0;
+    padding: 1px 8px;
+    border-radius: 3px;
+  }
+  
+  .progress-line .html::after {
+    content: "80%";
+  }
+  .progress-line .css::after {
+    content: "70%";
+  }
+  .progress-line .bootstrap::after {
+    content: "50%";
+  }
+  .progress-line .javascript::after {
+    content: "50%";
+  }
+  .progress-line .c::after {
+    content: "50%";
+  }
+  
+  .navbar.solid {
+    background-color: #07374a;
+    transition: background-color 1s ease 0s;
+    box-shadow: 0 0 4px rgb(7 55 74 / 20%);
+    z-index: 500;
+  }
+  
+  .navbar.solid .navbar-brand {
+    display: inline-block;
+    color: #f0f0e6;
+    transition: color 1s ease 0s;
+  }
+  
+  .navbar-brand {
+    display: none;
+    color: #f0f0e6;
+    font-weight: 400;
+  }
+  
+  .work-arrow {
+    margin: 2rem 0;
+  }
+  
+  .work-arrow a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #25b79f;
+  }
+  
+  .work-arrow-2 {
+    margin: 2rem 0;
+  }
+  
+  .work-arrow-2 a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #25b79f;
+    display: none;
+  }
+  main {
+    margin-left: 20%;
+    margin-right: 15%;
+    margin-bottom: 110px;
+  }
+  .right-sidebar {
+    width: 100px; 
+    float: right;
+  }
+  footer{
+    position: absolute;
+    width: 1200px;
+    background-color: rgba(0, 0, 0, 0)
+    
+    
+
+  }
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kadir Topcuoğlu</h1>
+    <img src="https://pbs.twimg.com/profile_images/1780265194091884544/TzPX4IX__400x400.jpg" alt="Profil Resmi">
+
+    <nav>
+
+    </nav>
+  </header>
+  <div class="container">
+    <div class="left-sidebar">
+        <aside class="sidebar">
+            <nav>
+              <ul>
+                  <li><a href="index.html" target="_blank">Ana Sayfa</a></li>
+                  <li><a class="active" href="beceriler.html" target="_blank">Beceriler</a></li>
+                  <li><a href="calismalarim.html" target="_blank">Çalışmalarım</a></li>
+                  <li><a href="hakkimda.html" target="_blank">Hakkımda</a></li>
+                  <li><a href="iletisim.html" target="_blank">İletişim</a></li>
+                  <li><a href="egitim.html" target="_blank">Eğitim hayatım</a></li>
+              </ul>
+            </nav>  
+        </aside>
+    </div>
+    </div>
+
+  <main>
+    <div class="skills">
+        <div class="right-content">
+          <div>
+            <h1 class="skills-heading">Becerilerim</h1>
+          </div>
+          <div class="skills-bar">
+            <div class="bar">
+              <div class="info">
+                <span>HTML</span>
+              </div>
+              <div class="progress-line"><span class="html"></span></div>
+              <div class="bar">
+                <div class="info">
+                  <span>CSS</span>
+                </div>
+                <div class="progress-line"><span class="css"></span></div>
+                <div class="bar">
+                  <div class="info">
+                    <span>BOOTSTRAP</span>
+                  </div>
+                  <div class="progress-line"><span class="bootstrap"></span></div>
+                  <div class="bar">
+                    <div class="info">
+                      <span>JAVASCRIPT</span>
+                    </div>
+                    <div class="progress-line"><span class="javascript"></span></div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>C Programming</span>
+                      </div>
+                      <div class="progress-line"><span class="c"></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  </main>
+
+  <div class="container">
+    <div class="right-sidebar">
+        <aside class="sidebar">
+            <nav>
+            <ul>
+                <li><a href="hobiler.html" target="_blank">Hobiler</a></li>            
+            </ul>
+            </nav>
+        </aside>
+   </div>
+
+   <footer>
+    <div class="social-media">
+      <a href="https://www.facebook.com/KhadirT91/">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook" width="32" height="32">
+        <span>Facebook</span>
+      </a>
+      <a href="https://twitter.com/KadirT91">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384054.png" alt="Twitter" width="32" height="32">
+        <span>Twitter</span>
+      </a>
+      <a href="https://www.instagram.com/9KadirT">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" width="32" height="32">
+        <span>Instagram</span>
+      </a>
+      <a href="https://github.com/KhadirT">
+        <img src="https://cdn-icons-png.flaticon.com/512/1051/1051342.png" alt="GitHub" width="32" height="32">
+        <span>GitHub</span>
+      </a>
+      </div>
+      <p>Benimle herhangi bir platformdan iletişime geçmek için istediğiniz platformun ikonuna tıklamanız yeterlidir.</p>
+    
+  </footer>
+
+  </body>
+  </html>
